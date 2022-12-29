@@ -32,3 +32,6 @@ The continuous expansion of the urban construction scale has recently contribute
 
 ## About Log
 > The log will saved at ./root/ dir.<br/>
+
+## Acknowledgment
+* This code repo is based on [DGCN](https://github.com/guokan987/DGCN) (guo et al.), which is excellently useful and helpful, here thanks a lot.
