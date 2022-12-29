@@ -30,8 +30,9 @@ The continuous expansion of the urban construction scale has recently contribute
 > Then just ruuuuuuuuuuuun it!
 
 
-## About Log
-> The log will saved at ./root/ dir.<br/>
+## About training log
+> The log will be saved at ./root/ dir.<br/>
+> Besides, it supports `pandas` and `matplotlib` to analyze & visualization.
 
 ## Acknowledgment
 * This code repo is based on [DGCN](https://github.com/guokan987/DGCN) (guo et al.), which is excellently useful and helpful, here thanks a lot.
