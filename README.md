@@ -20,10 +20,20 @@ The continuous expansion of the urban construction scale has recently contribute
 * pytorch >= 1.8.1 (CUDA)
 * numpy, scipy, sk-learn, pandas, tqdm
 * other packages that related above.
+Here is the steps:
+```
+conda create -n cdvgm python=3.7.4
+conda activate cdvgm
+conda install numpy scipy sk-learn pandas tqdm
+```
+Then, install pytroch by following [this](https://codeantenna.com/a/wGlXIGEs77) guidance step by step. 
+
+Note that, our code is tested successfully on `Linux` and `Windows10` with any GPU with at least 6GB v-memory.
+
 
 ## About Dataset
 > Make sure you have corrected the file name.<br/>
-> First you should try PEMSD8 & PEMSD4, then PEMSD3 and PEMSD7.
+> First you should try `PEMSD8` & `PEMSD4`, then `PEMSD3` and `PEMSD7`.
 
 ## About Running
 > Check the run.py with your custom configs (Don't care about all others). <br/>
