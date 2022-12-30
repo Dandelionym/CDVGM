@@ -45,4 +45,4 @@ Note that, our code is tested successfully on `Linux` and `Windows10` with any G
 > Besides, it supports `pandas` and `matplotlib` to analyze & visualization.
 
 ## Acknowledgment
-* This code repo is based on [DGCN](https://github.com/guokan987/DGCN) (guo et al.), which is excellently useful and helpful, here thanks a lot.
+* This repo is based on [DGCN](https://github.com/guokan987/DGCN) (Guo et al.), which is excellent, useful, and helpful, here faithfully thanks a lot.
