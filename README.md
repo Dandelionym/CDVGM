@@ -46,3 +46,6 @@ Note that, our code is tested successfully on `Linux` and `Windows10` with any G
 
 ## Acknowledgment
 * This repo is based on [DGCN](https://github.com/guokan987/DGCN) (Guo et al.), which is excellent, useful, and helpful, here faithfully thanks a lot.
+
+## License
+All rights reserved. Licensed under the CC BY-NC-SA 4.0 (Attribution-NonCommercial-ShareAlike 4.0 International). The code is released for academic research use only.
