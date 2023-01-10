@@ -1,10 +1,3 @@
-"""
-        Author: Mellen
-        Date: 2022, August
-        
-
-"""
-
 import os
 import numpy as np
 import torch
