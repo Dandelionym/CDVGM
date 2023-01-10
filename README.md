@@ -1,6 +1,8 @@
 <h2 align="center">Combined Dynamic Virtual Spatiotemporal Graph Mapping</h2>
 <br>
+<!--
 <h5 align="center">This <a href="https://www.researchgate.net/publication/364126322_Combined_Dynamic_Virtual_Spatiotemporal_Graph_Mapping_for_Traffic_Prediction?_sg%5B0%5D=mdpk3xtXzGI84gwfVM7_NgGYjYzdiZh6SPgxlZsxKMX-KhDKPR-EZ6VlHKb-qYn0UihjRDf9p1msAmKwWTnE5pdILyUktKQekBGfjc5G.EZF8WgrjPkDgQWwhDKYI3Gtk09nfRaoCr7sozP2RF-99sn1Y1N_8_cBTcVlVX0BNnyr4u7SItxl4oDCeX8eUnw">paper</a> is under reviewing, if you download this repo, give it a star please</h5>
+-->
 
 <br>
 <p align="center">
@@ -26,7 +28,7 @@ conda create -n cdvgm python=3.7.4
 conda activate cdvgm
 conda install numpy scipy sk-learn pandas tqdm
 ```
-Then, install pytroch by following [this](https://codeantenna.com/a/wGlXIGEs77) guidance step by step. 
+Then, install pytroch by following official guidance step by step. 
 
 Note that, our code is tested successfully on `Linux` and `Windows10` with any GPU with at least 6GB v-memory.
 
