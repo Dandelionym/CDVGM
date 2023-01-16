@@ -14,7 +14,14 @@ from sklearn import preprocessing
 import matplotlib.pyplot as plt
 import torch.nn.functional as F
 from torch.nn import BatchNorm2d
-
+# seed = 30326
+seed = 303260
+# seed = 120110119
+np.random.seed(seed)
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
 if __name__ == "__main__":
@@ -59,7 +66,7 @@ if __name__ == "__main__":
         # Epoch Record
         with open(f'./root/record.csv', mode='a', encoding='utf-8') as f:
             f.write(
-                f"{seed},{epoch},{train_loss},{valid_loss},{scheduler.get_last_lr()[0]},{_MAE},{_MAPE},{_RMSE},{datetime.now()}\n")
+                f"{0},{epoch},{train_loss},{valid_loss},{scheduler.get_last_lr()[0]},{_MAE},{_MAPE},{_RMSE},{datetime.now()}\n")
 
         params_filename = os.path.join(params_path,
                                        '%s_epoch_%s_%s.params' % (model_name, epoch, str(round(valid_loss, 2))))

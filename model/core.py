@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 import sys
 from torch.nn import BatchNorm2d, Conv1d, Conv2d, ModuleList, Parameter, LayerNorm, InstanceNorm2d
+from torch.nn.utils import weight_norm
 
 from model.utils import ST_BLOCK_1
 
@@ -27,6 +28,8 @@ class CDVGM(nn.Module):
         self.conv2 = Conv2d(c_out // 2, 1, kernel_size=(1, 1), padding=(0, 0), stride=(1, 1), bias=False)
         self.conv3 = Conv2d(c_out, c_out // 2, kernel_size=(1, 1), padding=(0, 0), stride=(1, 1), bias=False)
         self.conv4 = Conv2d(c_out // 2, 1, kernel_size=(1, 1), padding=(0, 0), stride=(1, 1), bias=False)
+
+        self.TCN = TemporalConvNet(num_inputs=num_nodes, num_channels=[170, 170])
 
         self.h = Parameter(torch.rand(num_nodes, num_nodes), requires_grad=True)
         self.b = Parameter(torch.rand(num_nodes, num_nodes), requires_grad=True)
@@ -59,7 +62,6 @@ class CDVGM(nn.Module):
         x2 = self.conv4(x2).squeeze()
 
         x = x1 + x2
-
         x = self.TCN(x)
 
         return x, d_adj, A1

@@ -73,7 +73,6 @@ class ST_BLOCK_1(nn.Module):
 			torch.unsqueeze(time[:, :, -1], -1)
 		), -1)											# B, N, L
 
-		time_conv = self.TCN(time_conv)
 		time_conv = torch.unsqueeze(time_conv, 1)
 		x_1 = self.time_c(time_conv).contiguous()
 		x_2 = x_res + x_1 - torch.unsqueeze(torch.mean(x_1, -1), -1)
