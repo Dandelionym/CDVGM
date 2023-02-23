@@ -6,9 +6,10 @@
 
 <br>
 <p align="center">
-<img align="center" src="https://img.shields.io/badge/Fast-80%25-blue" />
-<img align="center" src="https://img.shields.io/badge/Stable-90%25-green" />
+<img align="center" src="https://img.shields.io/badge/Fast-100%25-blue" />
+<img align="center" src="https://img.shields.io/badge/Stable-100%25-green" />
 <img align="center" src="https://img.shields.io/badge/Topology_free-100%25-red" />
+<img align="center" src="https://img.shields.io/badge/Dynamic-100%25-yellow" />
 </p>
 <br>
 
@@ -48,13 +49,12 @@ Note that, our code is tested successfully on `Linux` and `Windows10` with any G
 > First you should try `PEMSD8` & `PEMSD4`, then `PEMSD3` and `PEMSD7`.
 
 ## About Running
-> Check the run.py with your custom configs (Don't care about all others). <br/>
+> Check the `run.py` with your custom configs (don't nned to care about all others). <br/>
 > Then just ruuuuuuuuuuuun it!
 
 
 ## About training log
 > The log will be saved at ./root/ dir.<br/>
-> Besides, it supports `pandas` and `matplotlib` to analyze & visualization.
 
 ## Acknowledgment
 * This repo is based on [DGCN](https://github.com/guokan987/DGCN) (Guo et al.), which is excellent, useful, and helpful, here faithfully thanks a lot.
